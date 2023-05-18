@@ -18,6 +18,7 @@ $nome= 'Pablo';
     </head>
 
 </head>
+
 <body>
 
     <!-- <h1>Ciao Mondo, sono Pablo <?php echo $nome ?> </h1> -->
@@ -25,26 +26,25 @@ $nome= 'Pablo';
         Compila il seguente form
     </h1>
 
-    <form action="pagina.php" method="POST">
+    <form action="pagina.php" method="GET">
 
-    <div>
+        <!-- input text-area -->
         <div class="d-flex flex-column align-items-center mb-3">
-            <label for="input-area">Paragrafo:</label>
-            <textarea id="input-area" name="paragrafo" id="" cols="30" rows="5" required>
-
-            </textarea>
+            <label for="input-paragrafo">Paragrafo:</label>
+            <input class="w-50" type="text" name="inputParagrafo" id="input-paragrafo" required maxlength="40">
+            
         </div>
         
+        <!-- input text -->
         <div class="d-flex flex-column align-items-center mb-3">
             <label for="bad-word">Parola da censurare:</label>
-            <input id="bad-word" class="w-50" type="text" placeholder="Parola che desideri censurare.." name="badWord">
+            <input id="bad-word" type="text" placeholder="Parola che desideri censurare.." name="inputParola" required>
         </div>
         
         <button type="submit" class="d-block mx-auto">Invia Form</button>
+        asdas
 
-    </div>
-
-</form>
+    </form>
     
 </body>
 </html>
