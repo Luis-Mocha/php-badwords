@@ -1,9 +1,10 @@
 <?php
     $paragrafo= $_POST['inputParagrafo'];
     $badWord= $_POST['inputParola'];
+    $parola = 'dolor';
 
     // $arraySpazi = explode(' ', $paragrafo);
-    $censored = str_replace( $badword, '***', $paragrafo);
+    echo str_replace( $badword, '***', $paragrafo);
 
     // echo $badWord;
     // echo $paragrafo;
@@ -11,7 +12,8 @@
     // echo strlen($paragrafo);
 
     var_dump ($censored);
-    var_dump (str_replace( 'dolor', '***', $paragrafo));
+    var_dump (str_replace( $parola, '***', $paragrafo));
+    var_dump($badWord);
 
 ?>
 
@@ -30,6 +32,9 @@
 
 </head>
 <body>
+
+    <hr>
+
     <div class="bg-secondary p-4 text-light">
         <div>
             <span class="text-uppercase">paragrafo originale:</span>  
@@ -46,9 +51,9 @@
 
     <hr>
 
-    <div>
+    <div class="bg-success p-3 text-light">
         <span class="text-uppercase">paragrafo censurato:</span>
-        <?php echo str_replace( $badword, '***', $paragrafo) . $badWord ?>
+        <?php echo str_replace($badWord, '***', $paragrafo)  ?>
     </div>
 
 </body>
