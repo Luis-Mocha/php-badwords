@@ -26,7 +26,7 @@ $nome= 'Pablo';
         Compila il seguente form
     </h1>
 
-    <form action="pagina.php" method="GET">
+    <form action="pagina.php" method="POST">
 
         <!-- input text-area -->
         <div class="d-flex flex-column align-items-center mb-3">
@@ -41,8 +41,9 @@ $nome= 'Pablo';
             <input id="bad-word" type="text" placeholder="Parola che desideri censurare.." name="inputParola" required>
         </div>
         
-        <button type="submit" class="d-block mx-auto">Invia Form</button>
-        asdas
+        <button type="submit" class="d-block mx-auto">
+            Invia Form
+        </button>
 
     </form>
     
