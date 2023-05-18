@@ -4,6 +4,10 @@ $nome= 'Pablo';
 $stringa = "  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus dolorem facilis dolore excepturi eaque ad cum qui dolorum repellendus aspernatur ipsum vel autem, dolor at sapiente totam nihil provident quos! ";
 
 echo str_replace('dolor', '***', $stringa);
+echo explode(',', $stringa);
+echo strlen($stringa);
+
+var_dump( explode(',', $stringa) );
 
 ?>
 
