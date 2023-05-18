@@ -1,6 +1,9 @@
 <?php
 
 $nome= 'Pablo';
+$stringa = "  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus dolorem facilis dolore excepturi eaque ad cum qui dolorum repellendus aspernatur ipsum vel autem, dolor at sapiente totam nihil provident quos! ";
+
+echo str_replace('dolor', '***', $stringa);
 
 ?>
 
@@ -31,7 +34,8 @@ $nome= 'Pablo';
         <!-- input text-area -->
         <div class="d-flex flex-column align-items-center mb-3">
             <label for="input-paragrafo">Paragrafo:</label>
-            <input class="w-50" type="text" name="inputParagrafo" id="input-paragrafo" required maxlength="40">
+            <!-- <input style=" height:150px " class="w-50" type="text" name="inputParagrafo" id="input-paragrafo" required> -->
+            <textarea name="inputParagrafo" id="" cols="30" rows="10"></textarea>
             
         </div>
         

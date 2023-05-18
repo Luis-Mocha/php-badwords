@@ -2,8 +2,17 @@
     $paragrafo= $_POST['inputParagrafo'];
     $badWord= $_POST['inputParola'];
 
-    echo $badWord;
-    echo $paragrafo;
+    // $arraySpazi = explode(' ', $paragrafo);
+    $censored = str_replace( $badword, '***', $paragrafo);
+
+    // echo $badWord;
+    // echo $paragrafo;
+    // echo $censored;
+    // echo strlen($paragrafo);
+
+    var_dump ($censored);
+    var_dump (str_replace( 'dolor', '***', $paragrafo));
+
 ?>
 
 
@@ -21,10 +30,26 @@
 
 </head>
 <body>
+    <div class="bg-secondary p-4 text-light">
+        <div>
+            <span class="text-uppercase">paragrafo originale:</span>  
+            <?php echo $paragrafo ?>
+        </div>
 
-    <div>Il paragrafo è:  <?php echo $paragrafo ?></div>
+        <div>
+            <span>Lunghezza paragrafo:</span>  
+            <?php echo strlen($paragrafo) ?>
+        </div>
 
-    <div>La parola da bannare è <?php echo $badWord ?></div>
+        <div>Parola da bannare: <?php echo $badWord ?></div>
+    </div>
+
+    <hr>
+
+    <div>
+        <span class="text-uppercase">paragrafo censurato:</span>
+        <?php echo str_replace( $badword, '***', $paragrafo) . $badWord ?>
+    </div>
 
 </body>
 </html>
