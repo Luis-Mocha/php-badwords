@@ -28,7 +28,6 @@ var_dump( explode(',', $stringa) );
 
 <body>
 
-    <!-- <h1>Ciao Mondo, sono Pablo <?php echo $nome ?> </h1> -->
     <h1>
         Compila il seguente form
     </h1>
@@ -38,8 +37,7 @@ var_dump( explode(',', $stringa) );
         <!-- input text-area -->
         <div class="d-flex flex-column align-items-center mb-3">
             <label for="input-paragrafo">Paragrafo:</label>
-            <!-- <input style=" height:150px " class="w-50" type="text" name="inputParagrafo" id="input-paragrafo" required> -->
-            <textarea name="inputParagrafo" id="" cols="30" rows="10"></textarea>
+            <textarea name="inputParagrafo" id="input-paragrafo" cols="40" rows="10"></textarea>
             
         </div>
         
